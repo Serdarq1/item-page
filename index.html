@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div>
+    <div class="position-absolute d-none scaled-img-container">
+      <div class="col-10 col-sm-8 col-lg-6 big-img">
+        <div>
+          <div class="mb-4 text-end" id="close-btn">
+            <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/></svg>
+          </div>
+          <div class="previous-img pre"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg></div>
+          <img src="images/image-product-1.jpg" class="d-block mx-lg-auto img-fluid rounded-5 change-img">
+          <div class="previous-img next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg></div>  
+        <div class="mt-4 small-imgs justify-content-center">
+          <img src="images/image-product-1.jpg" width="80px" class="rounded-2 me-4 thumb">
+          <img src="images/image-product-2.jpg" width="80px" class="rounded-2 me-4 thumb">
+          <img src="images/image-product-3.jpg" width="80px" class="rounded-2 me-4 thumb">
+          <img src="images/image-product-4.jpg" width="80px" class="rounded-2 thumb">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<nav class="container-fluid mt-5">
+  <div class="container d-flex justify-content-between">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="menu">
+        <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" fill="#69707D" fill-rule="evenodd"/></svg>
+        <div class="ms-4 menu-list d-none">
+          <div class="mb-4" id="close">
+            <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/></svg>
+          </div>
+          <div>
+            <div class="justify-content-between gap-5 mt-3 text-section text-dark fw-bold fs-6 flex-column">
+              <p>Collections</p>
+              <p>Men</p>
+              <p>Women</p>
+              <p>About</p>
+              <p>Contact</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="fw-bold me-5 fs-2">sneakers</div>
+      <div class="justify-content-between gap-5 mt-3 text-section text-secondary fs-6 features">
+        <p>Collections</p>
+        <p>Men</p>
+        <p>Women</p>
+        <p>About</p>
+        <p>Contact</p>
+      </div>
+    </div>
+    <div class="d-flex justify-content-end mt-3">
+        <div id="cart">
+          <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg" class="mt-2"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg> 
+          <div class="shadow-lg active-cart pt-2 rounded-2 position-absolute bg-light d-none">
+            <div class="fw-bold ms-3">
+                Cart
+            </div>
+            <hr class="cart-hr text-secondary">
+            <div class="text-center mt-5 text-secondary fw-bold">
+                Your cart is empty.
+            </div>
+        
+            </div>
+        </div>
+      <img src="./images/image-avatar.png" width="40px" height="40px" class="ms-5 profile">
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center mt-3">
+    <hr class="w-75">
+  </div>
+</nav>
+
+
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-lg-6">
+      <p class="brand fw-bold">SNEAKER COMPANY</p>
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 w-75">Fall Limited Sneaker</h1>
+      <p class="lead text-secondary mt-5 mb-5 fs-6 w-75">These low-profile are your perfect causal wear companion. Featuring a durabble rubber outer sole, they'll withstand anything the weather can offer.</p>
+     <div class="d-flex price-container">
+      <div class="d-flex align-items-center">
+        <div class="me-4 fw-bold fs-3">$125.00</div>
+        <div class="sale-per px-2 py-1 rounded-1 fw-bold">50%</div>
+      </div>
+      <div class="fs-5 previous-price text-secondary">
+        $250.00
+      </div>
+     </div>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <div class="quantity">
+          <button class="minus">-</button>
+          <span class="value fw-bold ">1</span>
+          <button class="plus">+</button>
+      </div>
+        <button type="button" class="btn add-to-cart fw-bold text-light btn-lgs fs-6 d-flex justify-content-center cart-btn">
+          <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg> 
+          <div class="ms-3 mt-1 ">
+            Add to cart
+          </div>
+        </button>
+      </div>
+      <div class="text-danger d-none position-absolute" id="warning">Items can't be less than 1</div>
+    </div>
+
+    <div class="col-10 col-sm-8 col-lg-6 big-img">
+      <img src="images/image-product-1.jpg" class="d-block mx-lg-auto img-fluid rounded-5" width="700" height="500" id="selected-pic">
+
+      <div class="mt-4 small-imgs justify-content-center">
+        <img src="images/image-product-1.jpg" width="80px" class="rounded-2 me-4 thumb">
+        <img src="images/image-product-2.jpg" width="80px" class="rounded-2 me-4 thumb">
+        <img src="images/image-product-3.jpg" width="80px" class="rounded-2 me-4 thumb">
+        <img src="images/image-product-4.jpg" width="80px" class="rounded-2 thumb">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Serdar Ziya Akova</a>.
+  </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

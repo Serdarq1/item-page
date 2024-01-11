@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Kumbh Sans!important;
+}
+
+.features{
+    display: flex;
+}
+
+.features p:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 7px;
+    text-decoration-color: hsl(26, 100%, 55%);
+    text-underline-offset: 53px;
+    cursor: pointer;
+}
+
+#cart svg{
+    cursor: pointer;
+}
+
+.active-cart{
+    width: 350px;
+    height: 250px;
+    right: 90px;
+    top: 110px;
+    z-index: 3;
+}
+
+.quantity{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.quantity span{
+    display: block;
+    width: 50px;
+    text-align: center;
+}
+
+.add-to-cart{
+    background-color: hsl(26, 100%, 55%)!important;
+}
+
+.opacity{
+    opacity: 0.7;
+}
+
+button svg{
+    margin-top: 4px!important;
+}
+
+button div{
+    font-size: 13px;
+}
+
+.brand{
+    color: hsl(26, 100%, 55%);
+    font-size: 14px;
+}
+
+.minus, .plus, .value{
+    background-color: rgb(240, 240, 240);
+    padding: 8px;
+    border: none;
+}
+
+.minus{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.plus{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.plus, .minus{
+    color: hsl(26, 100%, 55%);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.thumb-styles{
+    filter: brightness(120%);
+    border: 2px solid hsl(26, 100%, 55%);
+}
+
+.thumb:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.text-danger{
+    font-size: 10px;
+}
+
+.number-of-items{
+    background-color: hsl(26, 100%, 55%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 14px;
+    color: hsl(25, 100%, 94%);
+    font-weight: bold;
+    position: absolute;
+    right: 150px;
+    top: 62px;
+}
+
+.profile{
+    cursor: pointer;
+}
+
+#selected-pic{
+    cursor: pointer;
+}
+
+.previous-price{
+    text-decoration: line-through;
+}
+
+.sale-per{
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+}
+
+.previous-price{
+    margin-top: 8px;
+    margin-bottom: 16px;
+ }
+
+
+.price-container{
+    flex-direction: column;
+}
+
+.cart-btn{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 238px;
+    margin-left: 20px;
+}
+
+.menu{
+    margin-right: 20px;
+    margin-left: 20px;
+    display: none;
+}
+
+.small-imgs{
+    display: flex;
+}
+
+.darken{
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0.75;
+}
+
+.menu-list{
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    left: 0;
+    top: 0;
+    margin-top: 50px;
+    width: 250px;
+    height: 160vh;
+    box-shadow: 10rem 10rem 10rem rgba(0, 0, 0, 0.2);
+}
+
+.previous-img{
+    position: absolute; 
+    top: 39%; 
+    background-color: white; 
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    cursor: pointer;
+}
+
+.pre{
+    left: -25px;
+}
+
+.next{
+    right: 480px;
+}
+
+.scaled-img-container{
+    left: 30%; 
+    top: 30%; 
+    z-index: 10;
+}
+
+#close-btn{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 680px) {
+     .small-imgs{
+        display: none!important;
+     }
+     #selected-pic{
+        width: max-content;
+     }
+     .row{
+        display: flex;
+        flex-direction: column-reverse;
+     }
+     .price-container{
+        display: flex!important;
+        flex-direction: row!important;
+        justify-content: space-between!important;
+     }
+     .previous-price{
+        margin-top: 0;
+        margin-bottom: 0;
+     }
+     .value, .minus, .plus{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 25px;
+     }
+     .value{
+        padding-left: 200px;
+        padding-right: 200px;
+     }
+     .cart-btn{
+        width: 450px;
+        margin-left: 0;
+     }
+     .features{
+        display: none;
+     }
+     .menu{
+        display: block;
+     }
+     .number-of-items{
+        right: 105px;
+     }
+     .scaled-img-container{
+        left: 70px;
+        top: 250px;
+     }
+     .next{
+        right: 50px;
+     }
+  }
